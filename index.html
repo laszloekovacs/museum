@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martfű Á gyár</title>
+    <script type="text/javascript" src="js/libpannellum.js"></script>
+    <script type="text/javascript" src="js/pannellum.js"></script>
+    <link rel="stylesheet" href="css/pannellum.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Gyár Irodák virtuális túra</h1>
+    <p>Látogasson el a cipőgyár irodájába!</p>
+
+    <div id="panorama" class="pnlm-container"></div>
+</body>
+
+
+<script>
+pannellum.viewer('panorama', {
+    "autoLoad": true,
+    "compass":false,
+    "hotSpotDebug": true,
+    "default": {
+        "firstScene": "office",
+        "sceneFadeDuration": 1000
+    },
+    "scenes" : {
+        "reception" : {
+            "type":"equirectangular",
+            "panorama":"images/alma.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -15,
+                    "yaw": 7.35,
+                    "type":"scene",
+                    "text":"iroda és dolgok",
+                    "sceneId":"office"
+                },
+                {
+                    "pitch": -9.4,
+                    "yaw": 222.6,
+                    "type": "info",
+                    "text": "Art Museum Drive"
+                },
+            ]
+        },
+        "office" : {
+            "type":"equirectangular",
+            "panorama": "images/cerro.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -11,
+                    "yaw": 7.35,
+                    "type":"scene",
+                    "text":"iroda és dolgok",
+                    "sceneId":"reception"
+                },
+                {
+                    "pitch": -9.4,
+                    "yaw": 222.6,
+                    "type": "info",
+                    "text": "Art Museum Drive"
+                },
+            ]
+        }
+    }
+});
+</script>
+
+</html>

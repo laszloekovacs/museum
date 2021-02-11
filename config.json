@@ -1,0 +1,49 @@
+{
+    "autoLoad": true,
+    "compass": false,
+    "hotSpotDebug": true,
+    "default": {
+        "firstScene": "office",
+        "sceneFadeDuration": 1000
+    },
+    "scenes": {
+        "reception": {
+            "type": "equirectangular",
+            "panorama": "images/alma.jpg",
+            "hotspots": [
+                {
+                    "pitch": -11,
+                    "yaw": 7.35,
+                    "type": "scene",
+                    "text": "iroda és dolgok",
+                    "sceneId": "office"
+                },
+                {
+                    "pitch": -9.4,
+                    "yaw": 222.6,
+                    "type": "info",
+                    "text": "Art Museum Drive"
+                }
+            ]
+        },
+        "office": {
+            "type": "equirectangular",
+            "panorama": "images/cerro.jpg",
+            "hotspots": [
+                {
+                    "pitch": -11,
+                    "yaw": 7.35,
+                    "type": "scene",
+                    "text": "iroda és dolgok",
+                    "sceneId": "office"
+                },
+                {
+                    "pitch": -9.4,
+                    "yaw": 222.6,
+                    "type": "info",
+                    "text": "Art Museum Drive"
+                }
+            ]
+        }
+    }
+}
