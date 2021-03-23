@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Martfű Á gyár</title>
-    <meta property="og:url"                content="http://laszloekovacs.github.com/vrtour" />
-    <meta property="og:type"               content="article" />
-    <meta property="og:title"              content="Martfű Cipőgyár virtuálsi túra" />
-    <meta property="og:description"        content="Nem jártál még itt a gyárban? Itt a virtuális lehetőség" />
-    <meta property="og:image"              content="http://laszloekovacs.github.com/vrtour/img/businessman-vr.jpg" />
+    <meta property="og:url" content="http://laszloekovacs.github.com/vrtour" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Martfű Cipőgyár virtuálsi túra" />
+    <meta property="og:description" content="Nem jártál még itt a gyárban? Itt a virtuális lehetőség" />
+    <meta property="og:image" content="http://laszloekovacs.github.com/vrtour/img/businessman-vr.jpg" />
 
     <script type="text/javascript" src="js/libpannellum.js"></script>
     <script type="text/javascript" src="js/pannellum.js"></script>
@@ -18,11 +18,30 @@
 
 <body>
 
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- facebook script -->
+
     <main>
+        <section class="social">
+            <!-- Your share button code -->
+            <div class="fb-share-button" data-href="https://laszloekovacs.github.com/vrtour" data-layout="button_count"></div>
+        </section>
+
         <header>
             <h1>Gyár Irodák virtuális túra</h1>
             <p>Látogasson el a cipőgyár irodájába!</p>
         </header>
+        
         <section class="panorama-contaner">
             <div id="panorama" class="pnlm-container"></div>
         </section>
@@ -91,22 +110,6 @@
 </script>
 
 
-
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) return;
-js = d.createElement(s); js.id = id;
-js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<!-- Your share button code -->
-<div class="fb-share-button" 
-data-href="https://laszloekovacs.github.com/vrtour" 
-data-layout="button_count">
-</div>
 
 
 </html>
